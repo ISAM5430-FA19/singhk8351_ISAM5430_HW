@@ -1,15 +1,15 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D", "HW02\D.csproj", "{D418F854-1E77-4417-8EB9-C4ECE8212FE1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B1B2", "D2\B1B2.csproj", "{99690ECA-9869-40E2-971D-12E344CE6077}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B3", "B3\B3.csproj", "{0AA33D78-69B1-4113-9464-8030DC95A407}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C", "C\C.csproj", "{C9A02ECC-39D8-4A63-8A87-04833FBC379E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4", "C4\C4.csproj", "{767BE530-C9AD-4D70-9479-94126C15BAC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D", "..\..\GitRepo\singhk8351_ISAM5430_HW\HW02\HW02\D.csproj", "{D418F854-1E77-4417-8EB9-C4ECE8212FE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B1B2", "D2\B1B2.csproj", "{99690ECA-9869-40E2-971D-12E344CE6077}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,6 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D418F854-1E77-4417-8EB9-C4ECE8212FE1}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{D418F854-1E77-4417-8EB9-C4ECE8212FE1}.Debug|anycpu.Build.0 = Debug|anycpu
-		{D418F854-1E77-4417-8EB9-C4ECE8212FE1}.Release|anycpu.ActiveCfg = Release|anycpu
-		{D418F854-1E77-4417-8EB9-C4ECE8212FE1}.Release|anycpu.Build.0 = Release|anycpu
-		{99690ECA-9869-40E2-971D-12E344CE6077}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{99690ECA-9869-40E2-971D-12E344CE6077}.Debug|anycpu.Build.0 = Debug|anycpu
-		{99690ECA-9869-40E2-971D-12E344CE6077}.Release|anycpu.ActiveCfg = Release|anycpu
-		{99690ECA-9869-40E2-971D-12E344CE6077}.Release|anycpu.Build.0 = Release|anycpu
 		{0AA33D78-69B1-4113-9464-8030DC95A407}.Debug|anycpu.ActiveCfg = Debug|anycpu
 		{0AA33D78-69B1-4113-9464-8030DC95A407}.Debug|anycpu.Build.0 = Debug|anycpu
 		{0AA33D78-69B1-4113-9464-8030DC95A407}.Release|anycpu.ActiveCfg = Release|anycpu
@@ -37,5 +29,13 @@ Global
 		{767BE530-C9AD-4D70-9479-94126C15BAC4}.Debug|anycpu.Build.0 = Debug|anycpu
 		{767BE530-C9AD-4D70-9479-94126C15BAC4}.Release|anycpu.ActiveCfg = Release|anycpu
 		{767BE530-C9AD-4D70-9479-94126C15BAC4}.Release|anycpu.Build.0 = Release|anycpu
+		{D418F854-1E77-4417-8EB9-C4ECE8212FE1}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{D418F854-1E77-4417-8EB9-C4ECE8212FE1}.Debug|anycpu.Build.0 = Debug|anycpu
+		{D418F854-1E77-4417-8EB9-C4ECE8212FE1}.Release|anycpu.ActiveCfg = Release|anycpu
+		{D418F854-1E77-4417-8EB9-C4ECE8212FE1}.Release|anycpu.Build.0 = Release|anycpu
+		{99690ECA-9869-40E2-971D-12E344CE6077}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{99690ECA-9869-40E2-971D-12E344CE6077}.Debug|anycpu.Build.0 = Debug|anycpu
+		{99690ECA-9869-40E2-971D-12E344CE6077}.Release|anycpu.ActiveCfg = Release|anycpu
+		{99690ECA-9869-40E2-971D-12E344CE6077}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
