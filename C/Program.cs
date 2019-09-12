@@ -88,10 +88,12 @@ namespace C
             // 2.9
             // how to print 0 in below :
             int intCounter = 100;
-            while(intCounter > 0)
+            while(intCounter >= 0)
             {
                 Console.Write(intCounter);
                 Console.Write(' ');
+                if (intCounter == 0)
+                    break;
                 intCounter = intCounter /2;
             }
             Console.WriteLine();
@@ -105,13 +107,24 @@ namespace C
             }
             Console.WriteLine();
             // 3.11
-            //int factCounter = 1;
-            //int fact = 1;
-            //while(fact < 1000)
-            //{
-            //  fact = factCounter;
-
-            //}
+            int factCounter = 1;
+            int fact = 1;
+            int countFact = 1;
+            while (true)
+            { 
+                while (factCounter >= 1)
+                {
+                    fact *= factCounter;
+                    factCounter--;
+                 }
+                if (fact >= 1000)
+                    break;
+                Console.Write(fact);
+                Console.Write(' ');
+                fact = 1;
+                factCounter=++countFact;
+            }
+            Console.WriteLine();
             // 3.12
             int fib = 0;
             int fibNum1 = 0;
