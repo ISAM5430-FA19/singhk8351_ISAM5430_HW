@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B1", "B1\B1.csproj", "{4434
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B3", "B3\B3.csproj", "{E8A1F21E-DFA6-4CC5-9D1A-FFFFCBB235DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B7", "HW03\B7\B7.csproj", "{7BB77273-153B-4C24-B032-FD2EDA2EEB6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B8", "HW03\B8\B8.csproj", "{3F951B40-57D2-45B3-820B-DD4C148EE4FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -43,5 +47,13 @@ Global
 		{E8A1F21E-DFA6-4CC5-9D1A-FFFFCBB235DD}.Debug|anycpu.Build.0 = Debug|anycpu
 		{E8A1F21E-DFA6-4CC5-9D1A-FFFFCBB235DD}.Release|anycpu.ActiveCfg = Release|anycpu
 		{E8A1F21E-DFA6-4CC5-9D1A-FFFFCBB235DD}.Release|anycpu.Build.0 = Release|anycpu
+		{7BB77273-153B-4C24-B032-FD2EDA2EEB6A}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{7BB77273-153B-4C24-B032-FD2EDA2EEB6A}.Debug|anycpu.Build.0 = Debug|anycpu
+		{7BB77273-153B-4C24-B032-FD2EDA2EEB6A}.Release|anycpu.ActiveCfg = Release|anycpu
+		{7BB77273-153B-4C24-B032-FD2EDA2EEB6A}.Release|anycpu.Build.0 = Release|anycpu
+		{3F951B40-57D2-45B3-820B-DD4C148EE4FC}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{3F951B40-57D2-45B3-820B-DD4C148EE4FC}.Debug|anycpu.Build.0 = Debug|anycpu
+		{3F951B40-57D2-45B3-820B-DD4C148EE4FC}.Release|anycpu.ActiveCfg = Release|anycpu
+		{3F951B40-57D2-45B3-820B-DD4C148EE4FC}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

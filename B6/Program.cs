@@ -6,7 +6,12 @@ namespace B6
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter a ");
+            Console.WriteLine("Enter a  sequence of numbers");
+            int num = 1;
+            while(num > 0)
+            {
+
+            }
         }
     }
 }
