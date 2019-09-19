@@ -20,8 +20,8 @@ namespace B1
                 initialScore = Console.ReadLine();
                 if (string.IsNullOrEmpty(initialScore))
                     break;
-                    score = int.Parse(initialScore);
-                    scoreCount++;
+                score = int.Parse(initialScore);
+                scoreCount++;
             }
             if (scoreCount > 1)
             {
