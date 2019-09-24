@@ -60,8 +60,8 @@ namespace C14
             while (rowd > 0)
             {
                 int cold = 0;
-                int blankSpc = rowd - cold;
-                while (cold > 0)
+                int blankSpc = 1;
+                while (cold <= (a - rowd))
                 {
                     while (blankSpc < rowd)
                     {
@@ -72,7 +72,7 @@ namespace C14
                     cold++;
                 }
                 Console.WriteLine('\n');
-                rowd++;
+                rowd--;
             }
         }
     }
