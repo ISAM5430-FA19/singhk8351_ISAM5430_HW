@@ -9,6 +9,10 @@
             Console.WriteLine("Enter the count of numbers");
             int count = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the numbers: ");
+            int diff = 0;
+            int seqCount = 0;
+            int longestSeqCount = 0;
+            int preSeqNum = 0;
             int i = 0;
             int numberOfZeros = 0;
             int even = 0;
@@ -102,7 +106,7 @@
                     centerMin = currentNum;
                     minCount = 1;
                 }
-                if(currentNum > centerMax)
+                if (currentNum > centerMax)
                 {
                     centerMax = currentNum;
                     maxCount = 1;
@@ -112,9 +116,43 @@
                     onesCount++;
                 else if (currentNum == 4)
                     foursCount++;
+                // longest sequence of consecutive numbers           
+                //while (count < 10)
+                //{
+                if (seqCount == 0)
+                {
+                    preSeqNum = currentNum;
+                    seqCount = 1;
+                    //longestSeqCount = 1;
+                }
+                else if (seqCount == 1)
+                {
+                    diff = currentNum - preSeqNum;
+                    preSeqNum = currentNum;
+                    seqCount = 2;
+                    //longestSeqCount = 2;
+                }
+                else if ((currentNum - preSeqNum) != diff)
+                {
+                    seqCount = 0;
+                    diff = 0;
+                }
+                else
+                {
+                    seqCount = seqCount + 1;
+                    preSeqNum = currentNum;
+                }
+                //preSeqNum = currentNum;
+                if (longestSeqCount < seqCount)
+                        longestSeqCount = seqCount;
+                   
+                //}
                 i++;
             }
-            avg = (avg - max * maxCount - min * minCount)/count; // 10
+            avg = (avg - max * maxCount - min * minCount) / count; // 10
+            if (maxClumpLen == 1)
+                maxClumpLen = 0;
+            Console.WriteLine("The longest sequence count is {0}",longestSeqCount);// 14
             if (twosCount != 0) // 11
                 Console.WriteLine("Two is alone");
             else
