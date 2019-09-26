@@ -11,7 +11,7 @@ namespace B7
             while(num > 1)
             {
                 int digit = num % 10;
-                Console.WriteLine(digit);
+                Console.Write(digit);
                 num = num / 10;
             }
         }

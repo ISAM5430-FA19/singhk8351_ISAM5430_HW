@@ -36,44 +36,73 @@ namespace C14
             }
             Console.WriteLine('\n');
             // pattern c
-            int rowc = 0;
-            while (rowc < a)
+            for (int rowc = 1; rowc <= a; rowc++)
             {
-                int colc = a-rowc;
-                int blankSpc = 0;
-                while (colc > 0)
-                {                   
-                    while (blankSpc < rowc)
+                for (int colc = 1; colc <= a; colc++)
+                {
+                    if (rowc > colc)
                     {
                         Console.Write(' ');
-                        blankSpc++;
                     }
-                    Console.Write('*');
-                    colc--;
+                    else
+                        Console.Write('*');
                 }
-                Console.WriteLine('\n');
-                rowc++;
+                Console.WriteLine("\n");
             }
             Console.WriteLine('\n');
+            //int rowc = 0;
+            //while (rowc < a)
+            //{
+            //    int colc = a-rowc;
+            //    int blankSpc = 0;
+            //    while (colc > 0)
+            //    {                   
+            //        while (blankSpc < rowc)
+            //        {
+            //            Console.Write(' ');
+            //            blankSpc++;
+            //        }
+            //        Console.Write('*');
+            //        colc--;
+            //    }
+            //    Console.WriteLine('\n');
+            //    rowc++;
+            //}
+            //Console.WriteLine('\n');
             // pattern d
-            int rowd = a;
-            while (rowd > 0)
+            for (int rowd = 1; rowd <= a; rowd++)
             {
-                int cold = 0;
-                int blankSpc = 1;
-                while (cold <= (a - rowd))
+                int c = 0;
+                for (int cold = 1; cold <= a; cold++)
                 {
-                    while (blankSpc < rowd)
+                    if (cold > a - rowd)
                     {
-                        Console.Write(' ');
-                        blankSpc++;
+                        Console.Write('*');
+                        c++;
                     }
-                    Console.Write('*');
-                    cold++;
+                    else
+                        Console.Write(' ');
                 }
-                Console.WriteLine('\n');
-                rowd--;
+                Console.WriteLine("\n");
             }
+            //int rowd = a;
+            //while (rowd > 0)
+            //{
+            //    int cold = 0;
+            //    int blankSpc = 1;
+            //    while (cold <= (a - rowd))
+            //    {
+            //        while (blankSpc < rowd)
+            //        {
+            //            Console.Write(' ');
+            //            blankSpc++;
+            //        }
+            //        Console.Write('*');
+            //        cold++;
+            //    }
+            //    Console.WriteLine('\n');
+            //    rowd--;
+            //}
         }
     }
 }
