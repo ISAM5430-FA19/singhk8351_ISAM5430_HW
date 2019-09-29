@@ -33,11 +33,17 @@ namespace B8
                 b = b / 10;
                 count *= 10;
                 num += sum;
-            }           
+            }
+            Console.WriteLine(num);
+            //while (num > 0)
+            //{
+            //    count = count / 10;
+            //    revNum += (num % 10) * count;
+            //    num = num / 10;
+            //}
             while (num > 0)
             {
-                count = count / 10;
-                revNum += (num % 10) * count;
+                revNum = (revNum * 10) + (num % 10);
                 num = num / 10;
             }
             Console.Write(revNum);

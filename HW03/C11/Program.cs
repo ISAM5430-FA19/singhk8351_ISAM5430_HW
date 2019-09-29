@@ -12,7 +12,7 @@ namespace C11
             while(row < n)
             {
                 int col = 1;
-                while (col < 10)
+                while (col < n)
                 {
                     Console.Write(row*col);
                     Console.Write('\t');

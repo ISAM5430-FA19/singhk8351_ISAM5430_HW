@@ -12,16 +12,20 @@ namespace B5
             int num = int.MinValue;
             int closestNum = 0;
             int minDiff = int.MaxValue;
-            while (num != item)
+            while (true)
             {
                 num = int.Parse(Console.ReadLine());
-                if ((item - num) < minDiff)
+                int diff = item > num ? item - num : num - item;
+                if (diff < minDiff)
                 {
-                    minDiff = item - num;
+                    minDiff = diff;
                     closestNum = num;
                 }
+                if (num == item)
+                    break;
+                Console.WriteLine($"The closest number to {item} is {closestNum}");
             }
-            Console.WriteLine($"The closest number to {item} is {closestNum}");
+           // Console.WriteLine($"The closest number to {item} is {closestNum}");
         }
     }
 }

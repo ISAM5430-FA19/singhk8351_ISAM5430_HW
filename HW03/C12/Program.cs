@@ -9,10 +9,10 @@ namespace C12
             Console.WriteLine("Enter the number:");
             int num = int.Parse(Console.ReadLine());
             int primeNum = 1;
-            int count = 0;
-            while(primeNum < num)
+            int primeNumCount = 0;
+            while (primeNumCount < num)
             {
-                count = 0;
+                int count = 0;
                 int div = primeNum;
                 while (div >= 1)
                 {
@@ -22,8 +22,11 @@ namespace C12
                     }
                     div--;
                 }
-                if(count == 2)
-                Console.WriteLine(primeNum);
+                if (count == 2)
+                {
+                    Console.WriteLine(primeNum);
+                    primeNumCount++ ;
+                }
                 primeNum++;
             }           
         }

@@ -1,7 +1,7 @@
-﻿    using System;
+﻿using System;
 
-    namespace D
-    {
+namespace D
+{
     class MainClass
     {
         public static void Main(string[] args)
@@ -35,6 +35,10 @@
             int onesCount = 0;
             int foursCount = 0;
             string str = string.Empty;
+            int counter = 0;
+            int previousNum = int.MinValue;
+            bool up = false;
+            int hillCount = 0;
             while (i < count)
             {
                 int currentNum = int.Parse(Console.ReadLine());
@@ -47,11 +51,14 @@
                 if (currentNum % 2 == 0) // number of even integers
                     even++;
                 if (currentNum > max)// increasing order
+                {
                     order++;
+                    max = currentNum; // largest number
+                }
                 if (currentNum < min) // smallest number
                     min = currentNum;
-                if (currentNum > max) // largest number
-                    max = currentNum;
+                //if (currentNum > max) // largest number
+                //    max = currentNum;
                 if (count % 2 == 0)
                 {
                     if (i < count / 2) // comparison of sum of first half and second half numbers
@@ -144,15 +151,60 @@
                 }
                 //preSeqNum = currentNum;
                 if (longestSeqCount < seqCount)
-                        longestSeqCount = seqCount;
-                   
-                //}
+                    longestSeqCount = seqCount;
+
+                if (counter == 0)
+                {
+                    previousNum = currentNum;
+                    counter = 1;
+                }
+                else if (counter == 1)
+                {
+                    if (currentNum > previousNum)
+                    {
+                        up = true;
+                        //counter = 2;
+                        //previousNum = currentNum;
+                    }
+                    else
+                        up = false;
+                    //else if (currentNum < previousNum)
+                    //{
+                    counter = 2;
+                    previousNum = currentNum;
+                    //}
+                    //else
+                    //    counter = 1;
+                }
+                else
+                {
+                    if (up)
+                    {
+                        if (currentNum < previousNum)
+                        {
+                            hillCount++;
+                            counter = 1;
+                            up = false;
+                        }
+                    }
+                    else
+                    {
+                        if (currentNum > previousNum)
+                        {
+                            hillCount++;
+                            counter = 1;
+                            up = true;
+                        }
+                    }
+                    previousNum = currentNum;
+                }
                 i++;
             }
+            Console.WriteLine(hillCount); // 13
             avg = (avg - max * maxCount - min * minCount) / count; // 10
             if (maxClumpLen == 1)
                 maxClumpLen = 0;
-            Console.WriteLine("The longest sequence count is {0}",longestSeqCount);// 14
+            Console.WriteLine("The longest sequence count is {0}", longestSeqCount);// 14
             if (twosCount != 0) // 11
                 Console.WriteLine("Two is alone");
             else
@@ -180,4 +232,7 @@
             // print out the maximun value with thousand commas and no decimal places(0).
         }
     }
-    }
+}
+
+
+

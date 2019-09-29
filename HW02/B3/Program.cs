@@ -8,6 +8,7 @@ namespace B3
         {
             // B3
             char grade;
+            string result = string.Empty;
             Console.WriteLine("Enter the GPA");
             decimal gpa = decimal.Parse(Console.ReadLine());
             if (gpa < 0 || gpa > 4)
@@ -25,10 +26,10 @@ namespace B3
                     grade = 'D';
                 else grade = 'F';
                 if (gpaValue == 5 || gpaValue == 8 || gpaValue == 11)
-                    grade = (char)(grade + '-');
-                else if(gpaValue == 4 || gpaValue == 7 || gpaValue == 10)
-                    grade = (char)(grade + '+');
-                Console.WriteLine("Grade : " + grade);
+                    result = grade.ToString() + '-';
+                else if (gpaValue == 4 || gpaValue == 7 || gpaValue == 10)
+                    result = grade.ToString() + '+';
+                Console.WriteLine("Grade : " + result);
             }
         }
     }

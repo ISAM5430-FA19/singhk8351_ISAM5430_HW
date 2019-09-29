@@ -11,14 +11,13 @@ namespace C4
             Console.WriteLine("Enter the numbers : ");
             int counter = 0;
             float sum = 0;
-            float average = 0;
-            while(counter < count)
+            while (counter < count)
             {
                 int num = int.Parse(Console.ReadLine());
                 sum += num;
                 counter++;
             }
-            average = sum / count;
+            float average = sum / count;
             Console.WriteLine("Sum is : {0} ", sum);
             Console.WriteLine("Average is {0}",average);
         }

@@ -7,12 +7,11 @@ namespace B2
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter the numbers ");
-            int num = 0;
             int sum = 0;
             int preNum = int.MinValue;
             while (true)
             {
-                num = int.Parse(Console.ReadLine());
+                int num = int.Parse(Console.ReadLine());
                 if (preNum == num)
                     break;
                 preNum = num;
