@@ -72,13 +72,11 @@ namespace C14
             // pattern d
             for (int rowd = 1; rowd <= a; rowd++)
             {
-                int c = 0;
                 for (int cold = 1; cold <= a; cold++)
                 {
                     if (cold > a - rowd)
                     {
                         Console.Write('*');
-                        c++;
                     }
                     else
                         Console.Write(' ');
