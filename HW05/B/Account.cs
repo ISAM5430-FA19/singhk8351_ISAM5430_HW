@@ -4,16 +4,17 @@ namespace B
     public class Account
     {
         private string _name;
-        public float Withdraw(float amount, float bal)
+        private decimal _bal;
+        public decimal Withdraw(decimal amount)
         {
-            if (amount > bal)
+            if (amount > Balance)
             {
                 Console.WriteLine("Withdrawal amount exceeded account balance.");
-                return bal;
+                return Balance;
             }
-            return bal - amount;
+            return Balance - amount;
         }
-        public Account(string name)
+        public Account(string name, decimal bal)
         {
             // D'Morgan's Law
             // A||B == !(!A && !B)
@@ -22,13 +23,24 @@ namespace B
             // if(name != null && name != "")
             if (!string.IsNullOrEmpty(name))
                 Name = name;
+            Balance = bal;
             Is_Active = true;
             IsActive = true;
             //_name = name;
 
             // Name = name;
         }
-
+        public decimal Balance
+        {
+            get { return _bal; }
+            private set
+            {
+                if(value > 0.0m)
+                {
+                    _bal = value;
+                }
+            }
+        }
         public Account(string name, bool isActive)
         {
             Name = name;

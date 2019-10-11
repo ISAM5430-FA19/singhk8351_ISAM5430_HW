@@ -13,7 +13,7 @@ namespace C
             park.Facilities = "buses/food/shopping";
             park.Fees = 10.50;
             park.NumberOfEmployees = 700;
-            park.NumberOfVistors = 2000;
+            park.NumberOfVisitors = 2000;
             park.AnnualBudget = 30000;
             Console.WriteLine(park.GetParkNameLocationType());
             Console.WriteLine(park.GetParkNameLocationFacilities());

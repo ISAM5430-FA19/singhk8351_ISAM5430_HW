@@ -14,8 +14,36 @@ namespace C
             Dollar = dollar;
         }
 
-        private double Dollar { get; set; }
-        private double Cents { get; set; }
+        //public Money(double money)
+        //{
+        //    Dollar = (int)money;
+        //    Cents = (int)((money - Dollar) * 100);
+        //}
+
+        private double _dollar;
+        private double _cents;
+        public double Dollar
+        {
+            get
+            {
+                return _dollar;
+            }
+            set
+            {
+                _dollar = value;
+            }
+        }
+        public double Cents
+        {
+            get
+            {
+                return _cents;
+            }
+            set
+            {
+                _cents = value;
+            }
+        }
         public double IncrementMoney()
         {
             return Dollar++;

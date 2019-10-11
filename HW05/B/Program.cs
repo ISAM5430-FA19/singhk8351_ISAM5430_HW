@@ -1,15 +1,16 @@
 ﻿using System;
-
+// Lecture Question
 namespace B
 {
     class Program
     {
         static void Main(string[] args)
         {
-            float balance = 1000;
+            decimal balance;
             // default constructor is parameterless
             //Account account = new Account(); // instance of Account class i.e object
             Account account = new Account("Kirti Singh", false); // parameterized constructor
+            Account account1 = new Account("Kirti Singh", 1000); // parameterized constructor
             //a constructor forces you initialize the required states
             account.SetName("Kirti");
             Console.WriteLine("The name1 is " + account.GetName());
@@ -22,8 +23,8 @@ namespace B
             // Fully qualified type name, which includes a namespace"dot"
             Console.WriteLine(account);
             Console.WriteLine("Enter the amount to be withdrawn: ");
-            float withdrawalAmt = float.Parse(Console.ReadLine());
-            balance = account.Withdraw(withdrawalAmt, balance);
+            decimal withdrawalAmt = decimal.Parse(Console.ReadLine());
+            balance = account1.Withdraw(withdrawalAmt);
             Console.WriteLine("The account balance is: {0}", balance);
         }
     }
